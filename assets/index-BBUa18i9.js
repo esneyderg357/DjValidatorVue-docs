@@ -94,15 +94,13 @@
         }
         set_messages(spanish)
     `,-1)),t[4]||(t[4]=o("p",null,"Spanish and Russian translations are included in the 'locale' folder.",-1)),t[5]||(t[5]=o("p",null,"Example to spanish (in main.js):",-1)),t[6]||(t[6]=o("pre",null,`	    	
-        import {set_messages} from 'djvalidatorvue'
-        import messages from 'djvalidatorvue/locale/djValidatorvue_es'
+        import { set_messages,validator_es } from 'djvalidatorvue'
 
-        set_messages(messages)
+        set_messages(validator_es)
     `,-1)),t[7]||(t[7]=o("p",null,"To russian:",-1)),t[8]||(t[8]=o("pre",null,`	    	
-        import {set_messages} from 'djvalidatorvue'
-        import messages from 'djvalidatorvue/locale/djValidatorvue_ru'
+        import { set_messages,validator_ru } from 'djvalidatorvue'
         
-        set_messages(messages)
+        set_messages(validator_ru)
     `,-1))],64)}const rm=Vn(tm,[["render",nm]]),lm={};function am(e,t){return Kt(),jn(Ne,null,[t[0]||(t[0]=o("h3",null,[o("b",null,"Validations available")],-1)),t[1]||(t[1]=o("br",null,null,-1)),t[2]||(t[2]=o("h4",null,[o("b",null,"Required field")],-1)),t[3]||(t[3]=o("p",null,"To validate if a field is required, use the 'req' RULE as true or false (default: false) on rule instructions.",-1)),t[4]||(t[4]=o("pre",null,`        const validations={
 		email:{rule:'email,50'},//not required
 		obs:{req:false,rule:'text,5,150'},//not required
